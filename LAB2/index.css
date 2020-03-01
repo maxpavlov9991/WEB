@@ -1,0 +1,182 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #031b35;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo-wrapper {
+  overflow: hidden;
+  position: relative;
+  background-color: #020f1d;
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  min-width: 300px;
+  height: 100vh;
+}
+
+.ellipse1 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: 2s ease-in-out 0s infinite alternate-reverse rotate1;
+  -moz-animation: 2s ease-in-out 0s infinite alternate-reverse rotate1;
+  -o-animation: 2s ease-in-out 0s infinite alternate-reverse rotate1;
+  animation: 2s ease-in-out 0s infinite alternate-reverse rotate1;
+}
+
+.ellipse2 {
+  position: absolute;
+  z-index: 2;
+  transform: rotate(-150deg);
+  -webkit-animation: 2s ease-in-out 0s infinite alternate-reverse rotate2;
+  -moz-animation: 2s ease-in-out 0s infinite alternate-reverse rotate2;
+  -o-animation: 2s ease-in-out 0s infinite alternate-reverse rotate2;
+  animation: 2s ease-in-out 0s infinite alternate-reverse rotate2;
+}
+
+.ellipse3 {
+  position: absolute;
+  z-index: 3;
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
+  transform: rotate(30deg);
+  -webkit-animation: 2s ease-in-out 0s infinite alternate-reverse rotate3;
+  -moz-animation: 2s ease-in-out 0s infinite alternate-reverse rotate3;
+  -o-animation: 2s ease-in-out 0s infinite alternate-reverse rotate3;
+  animation: 2s ease-in-out 0s infinite alternate-reverse rotate3;
+}
+
+.logotxt {
+  min-width: 300px;
+  z-index: 4;
+  position: absolute;
+  background-color: rgba(2, 15, 29, 0.8);
+}
+
+.logotext {
+	position: absolute;
+  -webkit-animation: 2s ease-in-out 0s infinite alternate-reverse scale;
+  -moz-animation: 2s ease-in-out 0s infinite alternate-reverse scale;
+  -o-animation: 2s ease-in-out 0s infinite alternate-reverse scale;
+  animation: 2s ease-in-out 0s infinite alternate-reverse scale;
+}
+
+@media (min-width: 992px) {
+  .ellipse1 {
+    height: 500px;
+    width: 500px;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+  }
+  .ellipse2 {
+    height: 400px;
+    width: 400px;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+  }
+  .ellipse3 {
+    height: 300px;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+  }
+  .logotxt {
+    height: 150px;
+    width: 700px;
+    left: calc(50% - 350px);
+    top: calc(50% - 75px);
+  }
+  .logotext {
+    width: 700px;
+    height: 120px;
+    left: calc(50% - 350px);
+    top: calc(50% - 60px);
+  }
+}
+
+@media (max-width: 991px) and (min-width: 480px) {
+  .ellipse1 {
+    height: 400px;
+    width: 400px;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px); 
+  }
+  .ellipse2 {
+    height: 320px;
+    width: 320px;
+    left: calc(50% - 160px);
+    top: calc(50% - 160px); 
+  }
+  .ellipse3 {
+    height: 240px;
+    width: 240px;
+    left: calc(50% - 120px);
+    top: calc(50% - 120px); 
+  }
+  .logotxt {
+    height: 120px;
+    width: 420px;
+    left: calc(50% - 210px);
+    top: calc(50% - 60px);
+  }
+  .logotext {
+    width: 420px;
+    height: 96px;
+    left: calc(50% - 210px);
+    top: calc(50% - 48px);
+  }
+}
+
+@media (max-width: 479px) {
+  .ellipse1 {
+    height: 300px;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+  }
+  .ellipse2 {
+    height: 240px;
+    width: 240px;
+    left: calc(50% - 120px);
+    top: calc(50% - 120px);
+  }
+  .ellipse3 {
+    height: 180px;
+    width: 180px;
+    left: calc(50% - 90px);
+    top: calc(50% - 90px);
+  }
+  .logotxt {
+    height: 90px;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 45px);
+  }
+  .logotext {
+    width: 300px;
+    height: 72px;
+    left: calc(50% - 150px);
+    top: calc(50% - 36px);
+  }
+}
+
+@-webkit-keyframes rotate1 { from { transform: rotate(0deg) } to { transform: rotate(360deg) }  }
+   @-moz-keyframes rotate1 { from { transform: rotate(0deg) } to { transform: rotate(360deg) }  }
+     @-o-keyframes rotate1 { from { transform: rotate(0deg) } to { transform: rotate(360deg) }  }
+        @keyframes rotate1 { from { transform: rotate(0deg) } to { transform: rotate(360deg) }  }
+
+@-webkit-keyframes rotate2 { from { transform: rotate(-150deg) } to { transform: rotate(-510deg) }  }
+   @-moz-keyframes rotate2 { from { transform: rotate(-150deg) } to { transform: rotate(-510deg) }  }
+     @-o-keyframes rotate2 { from { transform: rotate(-150deg) } to { transform: rotate(-510deg) }  }
+        @keyframes rotate2 { from { transform: rotate(-150deg) } to { transform: rotate(-510deg) }  }
+
+@-webkit-keyframes rotate3 { from { transform: rotate(30deg) } to { transform: rotate(750deg) }  }
+   @-moz-keyframes rotate3 { from { transform: rotate(30deg) } to { transform: rotate(750deg) }  }
+     @-o-keyframes rotate3 { from { transform: rotate(30deg) } to { transform: rotate(750deg) }  }
+        @keyframes rotate3 { from { transform: rotate(30deg) } to { transform: rotate(750deg) }  }
+
+@-webkit-keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.05) }  }
+   @-moz-keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.05) }  }
+     @-o-keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.05) }  }
+        @keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.05) }  }
