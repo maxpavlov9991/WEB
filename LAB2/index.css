@@ -19,20 +19,20 @@ body {
 .ellipse1 {
   position: absolute;
   z-index: 1;
-  -webkit-animation: 2s ease-in-out 0s infinite alternate-reverse rotate1;
-  -moz-animation: 2s ease-in-out 0s infinite alternate-reverse rotate1;
-  -o-animation: 2s ease-in-out 0s infinite alternate-reverse rotate1;
-  animation: 2s ease-in-out 0s infinite alternate-reverse rotate1;
+  -webkit-animation: 5s ease-in-out 0s infinite alternate-reverse rotate1;
+  -moz-animation: 5s ease-in-out 0s infinite alternate-reverse rotate1;
+  -o-animation: 5s ease-in-out 0s infinite alternate-reverse rotate1;
+  animation: 5s ease-in-out 0s infinite alternate-reverse rotate1;
 }
 
 .ellipse2 {
   position: absolute;
   z-index: 2;
   transform: rotate(-150deg);
-  -webkit-animation: 2s ease-in-out 0s infinite alternate-reverse rotate2;
-  -moz-animation: 2s ease-in-out 0s infinite alternate-reverse rotate2;
-  -o-animation: 2s ease-in-out 0s infinite alternate-reverse rotate2;
-  animation: 2s ease-in-out 0s infinite alternate-reverse rotate2;
+  -webkit-animation: 5s ease-in-out 0s infinite alternate-reverse rotate2;
+  -moz-animation: 5s ease-in-out 0s infinite alternate-reverse rotate2;
+  -o-animation: 5s ease-in-out 0s infinite alternate-reverse rotate2;
+  animation: 5s ease-in-out 0s infinite alternate-reverse rotate2;
 }
 
 .ellipse3 {
@@ -41,10 +41,10 @@ body {
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   transform: rotate(30deg);
-  -webkit-animation: 2s ease-in-out 0s infinite alternate-reverse rotate3;
-  -moz-animation: 2s ease-in-out 0s infinite alternate-reverse rotate3;
-  -o-animation: 2s ease-in-out 0s infinite alternate-reverse rotate3;
-  animation: 2s ease-in-out 0s infinite alternate-reverse rotate3;
+  -webkit-animation: 5s ease-in-out 0s infinite alternate-reverse rotate3;
+  -moz-animation: 5s ease-in-out 0s infinite alternate-reverse rotate3;
+  -o-animation: 5s ease-in-out 0s infinite alternate-reverse rotate3;
+  animation: 5s ease-in-out 0s infinite alternate-reverse rotate3;
 }
 
 .logotxt {
@@ -56,10 +56,10 @@ body {
 
 .logotext {
 	position: absolute;
-  -webkit-animation: 2s ease-in-out 0s infinite alternate-reverse scale;
-  -moz-animation: 2s ease-in-out 0s infinite alternate-reverse scale;
-  -o-animation: 2s ease-in-out 0s infinite alternate-reverse scale;
-  animation: 2s ease-in-out 0s infinite alternate-reverse scale;
+  -webkit-animation: 5s ease-in-out 0s infinite alternate-reverse scale;
+  -moz-animation: 5s ease-in-out 0s infinite alternate-reverse scale;
+  -o-animation: 5s ease-in-out 0s infinite alternate-reverse scale;
+  animation: 5s ease-in-out 0s infinite alternate-reverse scale;
 }
 
 @media (min-width: 992px) {
@@ -176,7 +176,7 @@ body {
      @-o-keyframes rotate3 { from { transform: rotate(30deg) } to { transform: rotate(750deg) }  }
         @keyframes rotate3 { from { transform: rotate(30deg) } to { transform: rotate(750deg) }  }
 
-@-webkit-keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.05) }  }
-   @-moz-keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.05) }  }
-     @-o-keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.05) }  }
-        @keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.05) }  }
+@-webkit-keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.10) }  }
+   @-moz-keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.10) }  }
+     @-o-keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.10) }  }
+        @keyframes scale { from { transform: scale(1.00) } to { transform: scale(1.10) }  }
