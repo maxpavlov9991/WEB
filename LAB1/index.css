@@ -1,0 +1,147 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.title-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./tea.jpg);
+    background-size: cover;
+    filter: grayscale(0.5);
+    position: relative;
+}
+
+.title-wrap {
+    background: #b6320a7a;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    outline: 5px double black;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Trade Winds';
+    color: white;
+    margin: 0;
+    font-size: 48px;
+    line-height: 120px;
+    padding: 0;
+    text-align: center;
+}
+
+
+.info {
+    background-color: #310c01a6;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 400px;
+    height: 300px;
+    border: 5px double black;
+    float: center;
+    text-align: center;
+
+}
+
+.info > h4 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.info > p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    padding: 0;
+}
+
+.order-btn {
+    margin: 5px auto;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.order-btn:hover {
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05)
+}
+
+.order-link {
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.order-container {
+    height: 100vh;
+    width: 100%;
+    position: 'relative';
+    background-image: url(./tea2.jpg);
+    background-size: cover;
+}
+
+.contacts {
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    background-color: #0000008c;
+    top: calc(100vh + 50px);
+    left: 50px;
+    border: 5px double white;
+    text-align: center;
+}
+
+.contacts > h1 {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+
+.contacts > ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.contacts > ul > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.2s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.link:hover {
+    color: greenyellow;
+}
+
+.important-text {
+    background-color: transparent;
+    color: greenyellow;
+    font-weight: bold;
+    font-family: 'Trade Winds';
+}
