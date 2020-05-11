@@ -530,28 +530,48 @@ function openFirst() {
     content.appendChild(div)
 }
 // CONCATENATED MODULE: ./second.js
+function Insert(tag, content) {
+    const node = document.createElement(tag)
+    const textNode = document.createTextNode(content)
+    node.appendChild(textNode)
+    return node
+}
+
 function openSecond() {
-    fetch('https://pokeapi.co/api/v2/pokemon/')
+    fetch('https://pokeapi.co/api/v2/pokemon/ditto/')
     .then((resp) => {
         return resp.json()
+    })
+    .then((data) => {
+        const abilities = data.abilities
+
+        return Promise.all(abilities.map(element => {
+            return fetch(element.ability.url)
+        }))
+    })
+    .then((data) => {
+        return Promise.all(data.map(abilityResp => {
+            return abilityResp.json()
+        }))
     })
     .then((data) => {
         const content = document.querySelector('.content')
         content.innerHTML = ''
         const div = document.createElement('div')
-        const ul = document.createElement('ul')
-        const arr = data.results
-        arr.forEach(pokemon => {
-            const li = document.createElement('li')
-            const pokemonName = document.createTextNode(pokemon.name)
-            li.appendChild(pokemonName)
-            ul.appendChild(li)
+        const abilityUl = document.createElement('ul')
+        data.forEach((elem) => {
+            const abilityLi = document.createElement('li')
+            const effectUl = document.createElement('ul')
+            elem.effect_entries.forEach((eff => {
+                effectUl.appendChild(Insert('li', eff.effect))
+            }))
+            abilityLi.appendChild(Insert('h4', elem.name))
+
+            abilityLi.appendChild(effectUl)
+            abilityUl.appendChild(abilityLi)
         })
-        const title = document.createElement('h2')
-        const titleValue = document.createTextNode('All aviable Pokemons:')
-        title.appendChild(titleValue)
-        div.appendChild(title)
-        div.appendChild(ul)
+        div.appendChild(Insert('h2', 'All abilities of Ditto:'))
+        div.appendChild(abilityUl)
         content.appendChild(div)
     })
 }
